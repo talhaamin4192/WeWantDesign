@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  src: url('src/assets/GTWalsheimPro-Regular.woff2') format('woff2'),
+    url('src/assets/GTWalsheimPro-Regular.woff') format('woff'),
+    url('src/assets/GTWalsheimPro-Regular.ttf') format('ttf');
+  font-family: 'GTWalsheimPro';
+}
+@font-face {
+  font-family: 'Grifter';
+  src: url('src/assets/grifter.otf') format('otf');
+}
+
+@layer utilities {
+ 
+
+}
+
+@layer components {
+  .custom-link {
+    @apply px-2 py-1 rounded-lg hover:bg-neon hover:text-black text-white
+  }
+
+  .circle {
+    @apply size-custom-6 rounded-full bg-neon
+  }
+
+  .custom-img {
+    @apply [&>*]:rounded-lg [&>*]:h-img-height [&>*]:w-img-width flex flex-col gap-5
+  }
+
+  .work-circle {
+    @apply flex items-center justify-center size-12 text-18 px-5 border-black border-1 rounded-full bg-white
+  }
+
+  .dotted-line {
+    @apply [&::before]:absolute [&::before]:top-0 [&::before]:left-22 [&::before]:content-[""] [&::before]:border-l-1 [&::before]:border-black [&::before]:border-dashed [&::before]:w-full lg:[&::before]:h-[78vh] [&::before]:-z-10
+  }
+  .custom-hover{
+    @apply group-hover:translate-x-3 w-4 transition-transform duration-300
+  }
+  .custom-btn1{
+    @apply  w-full flex justify-center py-5 rounded-xl  items-center  font-semibold  gap-2 text-18
+  }
+  .custom-btn2{
+    @apply   flex justify-center py-5 rounded-xl  items-center   gap-2 text-18
+  }
+  .custom-div{
+    @apply p-8 flex flex-col gap-2
+  }
+  .custom-query-circle{
+     @apply py-5 px-5 flex  justify-center items-center rounded-full bg-white
+  }
+  .custom-li{
+    @apply transition-colors duration-100 ease-in hover:text-white
+  }
+ .custom-grid-class{
+  @apply p-10 rounded-xl border-b-white border-1 bg-white shadow-md flex items-center justify-between
+ }
+ .custom-service-btn{
+  @apply rounded-xl text-22 flex items-center justify-center py-1
+ }
+ 
+}
+.perspective{
+  perspective: 2000px;
+    perspective-origin: 50% 0;
+ }
