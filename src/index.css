@@ -62,9 +62,24 @@
  .custom-service-btn{
   @apply rounded-xl text-22 flex items-center justify-center py-1
  }
- 
+ .rotate-z-d {
+  @apply transform-gpu origin-bottom group-hover:rotate-x-[-40deg] group-hover:translate-z-[20px] transition-transform duration-500;
 }
-.perspective{
-  perspective: 2000px;
-    perspective-origin: 50% 0;
+.rotate-z-d1 {
+  @apply transform-gpu origin-bottom group-hover:rotate-x-[-35deg] group-hover:translate-z-[15px] transition-transform duration-500;
+}
+.rotate-z-d2 {
+  @apply transform-gpu origin-bottom group-hover:rotate-x-[-30deg] group-hover:translate-z-[10px] transition-transform duration-500;
+}
+.rotate-z-d3 {
+  @apply transform-gpu origin-bottom group-hover:rotate-x-[-25deg] group-hover:translate-z-[5px] transition-transform duration-500;
+}
+.rotate-z-d4 {
+  @apply transform-gpu origin-bottom group-hover:rotate-x-[-20deg] group-hover:translate-z-[0px] transition-transform duration-500;
+}
+
+
+ .custom-layout{
+  @apply inset-0 absolute w-full h-full rounded-xl
  }
+}

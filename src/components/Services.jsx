@@ -35,11 +35,17 @@ const Services = () => {
                     Assemble a fully capable design and development team <br /> overnight so you can scale fast 🙌
                 </p>
             </div>
-            <div className='py-10 grid grid-cols-2 grid-rows-3 gap-x-10 gap-y-5'>
-                <div onClick={() => toggleVisibility(1)}>
-                    <div className='relative custom-grid-class'>
-                        <h2 className='text-3xl'>Branding</h2>
-                        <img src={gridSvg_1} alt="Branding" />
+            <div className='py-10 grid grid-cols-2 grid-rows-3 gap-x-10 gap-y-5  [&>*]:hover:cursor-pointer '>
+                <div className='group' onClick={() => toggleVisibility(1)}>
+                    <div className='relative perspective-[2000] perspective-origin-top  '>
+                        <div className='custom-grid-class rotate-z-d'>
+                            <h2 className='text-3xl'>Branding</h2>
+                            <img src={gridSvg_1} alt="Branding" />
+                        </div>
+                        <div className='bg-3d-blue z-[-1]   rotate-z-d1 custom-layout' ></div>
+                        <div className='bg-3d-pink z-[-2]   rotate-z-d2 custom-layout' ></div>
+                        <div className='bg-3d-dblue z-[-3]  rotate-z-d3 custom-layout' ></div>
+                        <div className='bg-3d-yellow z-[-4] rotate-z-d4 custom-layout' ></div>
                     </div>
                     {visibleSections[1] && (
                         <div className='grid grid-cols-2 grid-rows-3 gap-7 py-4'>
@@ -54,10 +60,17 @@ const Services = () => {
                         </div>
                     )}
                 </div>
-                <div onClick={() => toggleVisibility(2)}>
-                    <div className='relative custom-grid-class'>
-                        <h2 className='text-3xl'>Web Design</h2>
-                        <img src={gridSvg_2} alt="Web Design" />
+                <div className=' group' onClick={() => toggleVisibility(2)}>
+                    <div className='relative perspective-[2000] perspective-origin-top'>
+                        <div className='custom-grid-class rotate-z-d'>
+                            <h2 className='text-3xl'>Web Design</h2>
+                            <img src={gridSvg_2} alt="Web Design" />
+                        </div>
+
+                        <div className='bg-3d-blue z-[-1]   rotate-z-d1 custom-layout' ></div>
+                        <div className='bg-3d-pink z-[-2]   rotate-z-d2 custom-layout' ></div>
+                        <div className='bg-3d-dblue z-[-3]  rotate-z-d3 custom-layout' ></div>
+                        <div className='bg-3d-yellow z-[-4] rotate-z-d4 custom-layout' ></div>
                     </div>
                     {visibleSections[2] && (
                         <div className='grid grid-cols-2 grid-rows-3 gap-7 py-4'>
@@ -72,10 +85,17 @@ const Services = () => {
                         </div>
                     )}
                 </div>
-                <div onClick={() => toggleVisibility(3)}>
-                    <div className='relative custom-grid-class'>
-                        <h2 className='text-3xl'>Decks</h2>
-                        <img src={gridSvg_3} alt="Decks" />
+                <div className='group' onClick={() => toggleVisibility(3)}>
+                    <div className='relative perspective-[2000] perspective-origin-top  '>
+                        <div className='custom-grid-class rotate-z-d'>
+                            <h2 className='text-3xl'>Decks</h2>
+                            <img src={gridSvg_3} alt="Decks" />
+                        </div>
+
+                        <div className='bg-3d-blue z-[-1]   rotate-z-d1 custom-layout' ></div>
+                        <div className='bg-3d-pink z-[-2]   rotate-z-d2 custom-layout' ></div>
+                        <div className='bg-3d-dblue z-[-3]  rotate-z-d3 custom-layout' ></div>
+                        <div className='bg-3d-yellow z-[-4] rotate-z-d4 custom-layout' ></div>
                     </div>
                     {visibleSections[3] && (
                         <div className='grid grid-cols-2 grid-rows-2 gap-7 py-4'>
@@ -88,10 +108,17 @@ const Services = () => {
                         </div>
                     )}
                 </div>
-                <div onClick={() => toggleVisibility(4)}>
-                    <div className='relative custom-grid-class'>
-                        <h2 className='text-3xl'>Marketing Design</h2>
-                        <img src={gridSvg_4} alt="Marketing Design" />
+                <div className='group' onClick={() => toggleVisibility(4)}>
+                    <div className='relative perspective-[2000] perspective-origin-top  '>
+                        <div className='custom-grid-class rotate-z-d'>
+                            <h2 className='text-3xl'>Marketing Design</h2>
+                            <img src={gridSvg_4} alt="Marketing Design" />
+                        </div>
+
+                        <div className='bg-3d-blue z-[-1]   rotate-z-d1 custom-layout' ></div>
+                        <div className='bg-3d-pink z-[-2]   rotate-z-d2 custom-layout' ></div>
+                        <div className='bg-3d-dblue z-[-3]  rotate-z-d3 custom-layout' ></div>
+                        <div className='bg-3d-yellow z-[-4] rotate-z-d4 custom-layout' ></div>
                     </div>
                     {visibleSections[4] && (
                         <div className='grid grid-cols-2 grid-rows-3 gap-7 py-4'>
@@ -106,10 +133,17 @@ const Services = () => {
                         </div>
                     )}
                 </div>
-                <div onClick={() => toggleVisibility(5)}>
-                    <div className='relative custom-grid-class'>
-                        <h2 className='text-3xl'>3D & Motion</h2>
-                        <img src={gridSvg_5} alt="3D & Motion" />
+                <div className='group' onClick={() => toggleVisibility(5)}>
+                    <div className='relative perspective-[2000] perspective-origin-top  '>
+                        <div className='custom-grid-class rotate-z-d'>
+                            <h2 className='text-3xl'>3D & Motion</h2>
+                            <img src={gridSvg_5} alt="3D & Motion" />
+                        </div>
+
+                        <div className='bg-3d-blue z-[-1]   rotate-z-d1 custom-layout' ></div>
+                        <div className='bg-3d-pink z-[-2]   rotate-z-d2 custom-layout' ></div>
+                        <div className='bg-3d-dblue z-[-3]  rotate-z-d3 custom-layout' ></div>
+                        <div className='bg-3d-yellow z-[-4] rotate-z-d4 custom-layout' ></div>
                     </div>
                     {visibleSections[5] && (
                         <div className='grid grid-cols-2 grid-rows-3 gap-7 py-4'>
@@ -123,10 +157,17 @@ const Services = () => {
                         </div>
                     )}
                 </div>
-                <div onClick={() => toggleVisibility(6)}>
-                    <div className='relative custom-grid-class'>
-                        <h2 className='text-3xl'>Mobile Design</h2>
-                        <img src={gridSvg_6} alt="Mobile Design" />
+                <div className='group' onClick={() => toggleVisibility(6)}>
+                    <div className='relative perspective-[2000] perspective-origin-top  '>
+                        <div className='custom-grid-class rotate-z-d'>
+                            <h2 className='text-3xl'>Mobile Design</h2>
+                            <img src={gridSvg_6} alt="Mobile Design" />
+                        </div>
+
+                        <div className='bg-3d-blue z-[-1]   rotate-z-d1 custom-layout' ></div>
+                        <div className='bg-3d-pink z-[-2]   rotate-z-d2 custom-layout' ></div>
+                        <div className='bg-3d-dblue z-[-3]  rotate-z-d3 custom-layout' ></div>
+                        <div className='bg-3d-yellow z-[-4] rotate-z-d4 custom-layout' ></div>
                     </div>
                     {visibleSections[6] && (
                         <div className='grid grid-cols-2 grid-rows-3 gap-7 py-4'>

@@ -9,8 +9,8 @@ const Collection = () => {
     return (
         <>
             <div className='w-full h-max relative bg-black'>
-                <div className='h-screen w-full  ' >
-                    <video width="100%" className='absolute right-0 left-0 -top-14 -z-10' autoPlay muted loop src={video1}></video>
+                <div className='h-max w-full  ' >
+                    <video width="100%"  autoPlay muted loop src={video1}></video>
                 </div>
                 <div className=' w-full ' >
                     <video width="100%" autoPlay muted loop src={video2}></video>
