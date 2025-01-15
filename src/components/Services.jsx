@@ -54,7 +54,7 @@ const Services = () => {
                             <div className='bg-3d-yellow custom-service-btn'>Packaging Design</div>
                             <div className='bg-black-2 text-white custom-service-btn'>Illustrations & Icons</div>
                             <div className='bg-3d-dblue text-white custom-service-btn'>Brand Assets</div>
-                            <div className='bg-neon flex rounded-xl items-center justify-between'>
+                            <div className='bg-neon flex rounded-xl items-center justify-between hover:brightness-110'>
                                 <img src={button_left} alt="" /> MORE <img src={button_right} alt="" />
                             </div>
                         </div>
@@ -79,7 +79,7 @@ const Services = () => {
                             <div className='bg-3d-yellow custom-service-btn'>SaaS Design</div>
                             <div className='bg-black-2 text-white custom-service-btn'>Webflow Websites</div>
                             <div className='bg-3d-dblue text-white custom-service-btn'>Ecommerce Websites</div>
-                            <div className='bg-neon flex rounded-xl items-center justify-between'>
+                            <div className='bg-neon flex rounded-xl items-center justify-between hover:brightness-110'>
                                 <img src={button_left} alt="" /> MORE <img src={button_right} alt="" />
                             </div>
                         </div>
@@ -102,7 +102,7 @@ const Services = () => {
                             <div className='bg-3d-dblue text-white custom-service-btn'>Pitch Decks</div>
                             <div className='bg-3d-pink text-white custom-service-btn'>Corporate Profiles</div>
                             <div className='bg-3d-yellow custom-service-btn'>Slide Decks</div>
-                            <div className='bg-neon flex rounded-xl items-center justify-between'>
+                            <div className='bg-neon flex rounded-xl items-center justify-between hover:brightness-110'>
                                 <img src={button_left} alt="" /> MORE <img src={button_right} alt="" />
                             </div>
                         </div>
@@ -127,7 +127,7 @@ const Services = () => {
                             <div className='bg-3d-yellow custom-service-btn'>Newsletter Design</div>
                             <div className='bg-black-2 text-white custom-service-btn'>Infographics</div>
                             <div className='bg-3d-dblue text-white custom-service-btn'>Marketing Collateral Design</div>
-                            <div className='bg-neon flex rounded-xl items-center justify-between'>
+                            <div className='bg-neon flex rounded-xl items-center justify-between hover:brightness-110'>
                                 <img src={button_left} alt="" /> MORE <img src={button_right} alt="" />
                             </div>
                         </div>
@@ -151,7 +151,7 @@ const Services = () => {
                             <div className='bg-3d-pink text-white custom-service-btn'>Digital Interactions</div>
                             <div className='bg-3d-yellow custom-service-btn'>Video Editing</div>
                             <div className='bg-black-2 text-white custom-service-btn'>2D Videos</div>
-                            <div className='bg-neon flex rounded-xl items-center justify-between'>
+                            <div className='bg-neon flex rounded-xl items-center justify-between hover:brightness-110'>
                                 <img src={button_left} alt="" /> MORE <img src={button_right} alt="" />
                             </div>
                         </div>
@@ -176,7 +176,7 @@ const Services = () => {
                             <div className='bg-3d-yellow custom-service-btn'>iOS App Design</div>
                             <div className='bg-black-2 text-white custom-service-btn'>Android App Design</div>
                             <div className='bg-3d-dblue text-white custom-service-btn'>Hybrid App Design</div>
-                            <div className='bg-neon flex rounded-xl items-center justify-between'>
+                            <div className='bg-neon flex rounded-xl items-center justify-between hover:brightness-110'>
                                 <img src={button_left} alt="" /> MORE <img src={button_right} alt="" />
                             </div>
                         </div>
