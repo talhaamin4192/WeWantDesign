@@ -23,7 +23,7 @@ const Membership = () => {
             start: 'top bottom',
             end: 'bottom top',
             onUpdate: (self) => {
-                let skew = clamp(self.getVelocity() / -500) // Adjusted velocity for smoother effect
+                let skew = clamp(self.getVelocity() / -2000) // Adjusted velocity for smoother effect
                 if (Math.abs(skew) > Math.abs(proxy.skew)) {
                     proxy.skew = skew
                     gsap.to(proxy, {
