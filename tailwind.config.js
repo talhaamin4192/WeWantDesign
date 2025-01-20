@@ -112,7 +112,9 @@ export default {
       },
       animation: {
         'adjust-position1': 'adjust-position linear fowards',
-        "translate-width1": "translate-width 14s ease-in-out infinite",
+        "translate-width1": "translate-width 14s ease-in-out infinite", 
+        fontBounce: 'combinedAnimation 3s ease-in-out infinite',
+        
 
       },
       keyframes: {
@@ -130,6 +132,7 @@ export default {
           '83.3%': { transform: 'translateY(-135px)', width: '133.61px' },
           '100%': { transform: 'translateY(-162px)', width: '56.13px' },
         }
+        ,
       }
       ,
       perspective: {
