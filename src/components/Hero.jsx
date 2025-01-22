@@ -6,13 +6,13 @@ const Hero = () => {
     <>
       <div className='h-screen w-full bg-neon' >
         <Header></Header>
-        <div className='size-full flex justify-center '>
+        <div className='size-full r '>
+
         <DotLottieReact
-      src="https://lottie.host/a1a1b153-674c-4582-99f0-d6e407b76901/is6OAGGyfk.lottie"
+      src="https://lottie.host/8a74d9ce-0e34-4181-86dd-19ab680367e3/IxGsgeQK1Y.lottie"
       loop
       autoplay
     />
-         
 
         </div>
       </div>
