@@ -7,13 +7,11 @@ const Hero = () => {
       <div className='h-screen w-full bg-neon' >
         <Header></Header>
         <div className='size-full r '>
-
-        <DotLottieReact
-      src="https://lottie.host/8a74d9ce-0e34-4181-86dd-19ab680367e3/IxGsgeQK1Y.lottie"
-      loop
-      autoplay
-    />
-
+          <DotLottieReact
+            src="https://lottie.host/2c56e30c-8191-4392-9803-9dc3a86f8fb2/XeVuKc3kT8.lottie"
+            loop
+            autoplay
+          />
         </div>
       </div>
     </>
