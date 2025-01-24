@@ -51,7 +51,7 @@ const Issues = () => {
 
           {/* H2 Elements */}
           <div className="absolute top-0 left-0 w-8/12 mt-48 flex flex-col items-center [&>*]:py-4 [&>*]:px-6 [&>*]:rounded-full text-18 z-10">
-            {[ 
+            {[
               { text: 'Lack of personality & attention', color: 'bg-customOrange text-white' },
               { text: 'Strict contracts and scopes', color: 'bg-black text-white' },
               { text: 'Slow decision-making', color: 'bg-black text-white' },

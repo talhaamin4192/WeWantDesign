@@ -10,7 +10,7 @@ const Collection = () => {
         <>
             <div className='w-full h-max relative bg-black'>
                 <div className='h-max w-full  ' >
-                    <video width="100%"  autoPlay muted loop src={video1}></video>
+                    <video width="100%" autoPlay muted loop src={video1}></video>
                 </div>
                 <div className=' w-full ' >
                     <video width="100%" autoPlay muted loop src={video2}></video>

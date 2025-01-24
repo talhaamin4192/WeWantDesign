@@ -59,7 +59,7 @@ export default {
         "72": "72px",
         "44": "44px",
         "14": "14px",
-        "22":"22px"
+        "22": "22px"
       }
       ,
       width: {
@@ -112,9 +112,9 @@ export default {
       },
       animation: {
         'adjust-position1': 'adjust-position linear fowards',
-        "translate-width1": "translate-width 14s ease-in-out infinite", 
+        "translate-width1": "translate-width 14s ease-in-out infinite",
         fontBounce: 'combinedAnimation 3s ease-in-out infinite',
-        
+
 
       },
       keyframes: {
@@ -145,12 +145,9 @@ export default {
         '30': '30px',
         '40': '40px',
       },
-
-
-
     },
   },
-  plugins: [ 
+  plugins: [
     require("@xpd/tailwind-3dtransforms")
   ],
 }

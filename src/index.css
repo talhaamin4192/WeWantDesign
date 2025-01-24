@@ -8,15 +8,13 @@
     url('src/assets/GTWalsheimPro-Regular.ttf') format('ttf');
   font-family: 'GTWalsheimPro';
 }
+
 @font-face {
   font-family: 'Grifter';
   src: url('src/assets/grifter.otf') format('otf');
 }
 
-@layer utilities {
- 
-
-}
+@layer utilities {}
 
 @layer components {
   .custom-link {
@@ -38,48 +36,61 @@
   .dotted-line {
     @apply [&::before]:absolute [&::before]:top-0 [&::before]:left-22 [&::before]:content-[""] [&::before]:border-l-1 [&::before]:border-black [&::before]:border-dashed [&::before]:w-full lg:[&::before]:h-[78vh] [&::before]:-z-10
   }
-  .custom-hover{
+
+  .custom-hover {
     @apply group-hover:translate-x-3 w-4 transition-transform duration-300
   }
-  .custom-btn1{
-    @apply  w-full flex justify-center py-5 rounded-xl  items-center  font-semibold  gap-2 text-18
+
+  .custom-btn1 {
+    @apply w-full flex justify-center py-5 rounded-xl items-center font-semibold gap-2 text-18
   }
-  .custom-btn2{
-    @apply   flex justify-center py-5 rounded-xl  items-center   gap-2 text-18
+
+  .custom-btn2 {
+    @apply flex justify-center py-5 rounded-xl items-center gap-2 text-18
   }
-  .custom-div{
+
+  .custom-div {
     @apply p-8 flex flex-col gap-2
   }
-  .custom-query-circle{
-     @apply py-5 px-5 flex  justify-center items-center rounded-full bg-white
+
+  .custom-query-circle {
+    @apply py-5 px-5 flex justify-center items-center rounded-full bg-white
   }
-  .custom-li{
+
+  .custom-li {
     @apply transition-colors duration-100 ease-in hover:text-white
   }
- .custom-grid-class{
-  @apply p-10 rounded-xl border-b-white border-1 bg-white shadow-md flex items-center justify-between
- }
- .custom-service-btn{
-  @apply rounded-xl text-22 flex items-center justify-center py-1
- }
- .rotate-z-d {
-  @apply transform-gpu origin-bottom group-hover:rotate-x-[-40deg] group-hover:translate-z-[20px] transition-transform duration-500;
-}
-.rotate-z-d1 {
-  @apply transform-gpu origin-bottom group-hover:rotate-x-[-35deg] group-hover:translate-z-[15px] transition-transform duration-500;
-}
-.rotate-z-d2 {
-  @apply transform-gpu origin-bottom group-hover:rotate-x-[-30deg] group-hover:translate-z-[10px] transition-transform duration-500;
-}
-.rotate-z-d3 {
-  @apply transform-gpu origin-bottom group-hover:rotate-x-[-25deg] group-hover:translate-z-[5px] transition-transform duration-500;
-}
-.rotate-z-d4 {
-  @apply transform-gpu origin-bottom group-hover:rotate-x-[-20deg] group-hover:translate-z-[0px] transition-transform duration-500;
-}
+
+  .custom-grid-class {
+    @apply p-10 rounded-xl border-b-white border-1 bg-white shadow-md flex items-center justify-between
+  }
+
+  .custom-service-btn {
+    @apply rounded-xl text-22 flex items-center justify-center py-1
+  }
+
+  .rotate-z-d {
+    @apply transform-gpu origin-bottom group-hover:rotate-x-[-40deg] group-hover:translate-z-[20px] transition-transform duration-500;
+  }
+
+  .rotate-z-d1 {
+    @apply transform-gpu origin-bottom group-hover:rotate-x-[-35deg] group-hover:translate-z-[15px] transition-transform duration-500;
+  }
+
+  .rotate-z-d2 {
+    @apply transform-gpu origin-bottom group-hover:rotate-x-[-30deg] group-hover:translate-z-[10px] transition-transform duration-500;
+  }
+
+  .rotate-z-d3 {
+    @apply transform-gpu origin-bottom group-hover:rotate-x-[-25deg] group-hover:translate-z-[5px] transition-transform duration-500;
+  }
+
+  .rotate-z-d4 {
+    @apply transform-gpu origin-bottom group-hover:rotate-x-[-20deg] group-hover:translate-z-[0px] transition-transform duration-500;
+  }
 
 
- .custom-layout{
-  @apply inset-0 absolute w-full h-full rounded-xl
- }
+  .custom-layout {
+    @apply inset-0 absolute w-full h-full rounded-xl
+  }
 }

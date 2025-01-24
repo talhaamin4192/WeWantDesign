@@ -28,15 +28,15 @@ const Unlimitied = () => {
   return (
 
     <>
-    
-      <div 
+
+      <div
         className='flex items-center justify-center w-full font-GTWalsheimPro bg-white-1 h-max '>
         <div ref={videoRef}
-        style={{
-          width: `${videoSize}%`,
-          height: `${videoSize}%`,
-          transition: 'all 0.8s ease-out',
-        }}>
+          style={{
+            width: `${videoSize}%`,
+            height: `${videoSize}%`,
+            transition: 'all 0.8s ease-out',
+          }}>
           <video className='h-fit w-fit' muted autoPlay loop src={video6}></video>
         </div>
       </div>

@@ -89,8 +89,8 @@ const Work = () => {
                                 {index === 0
                                     ? 'Choose a plan and start instantly. No pesky contracts or limited scope.'
                                     : index === 1
-                                    ? 'Start sending us your design requests, and you\'ll receive them in 24-48 hours on average.'
-                                    : 'We\'ll make revisions until you\'re 100% satisfied.'}
+                                        ? 'Start sending us your design requests, and you\'ll receive them in 24-48 hours on average.'
+                                        : 'We\'ll make revisions until you\'re 100% satisfied.'}
                             </p>
                         </div>
                     </div>

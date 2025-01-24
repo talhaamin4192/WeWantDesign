@@ -204,17 +204,15 @@ const Queries = () => {
           <div className="flex gap-10" key={index}>
             <div>
               <button
-                className={`custom-query-circle ${
-                  visibleIndex === index ? 'bg-neon' : ''
-                }`}
+                className={`custom-query-circle ${visibleIndex === index ? 'bg-neon' : ''
+                  }`}
                 onClick={() => toggleDiv(index)}
               >
                 <img
                   src={rotatedIndex === index ? cross : plus}
                   alt="Toggle Answer"
-                  className={`transition-transform duration-300 ${
-                    rotatedIndex === index ? 'rotate-45' : ''
-                  }`}
+                  className={`transition-transform duration-300 ${rotatedIndex === index ? 'rotate-45' : ''
+                    }`}
                 />
               </button>
             </div>

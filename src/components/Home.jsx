@@ -15,22 +15,22 @@ import Footer from './Footer'
 const Home = () => {
   return (
     <>
-    <div className='z-40 '>
-    <Hero></Hero>
-    <Unlimitied></Unlimitied>
-    <Issues></Issues>
-    <Collection></Collection>
-    <Services></Services>
-    <Slider></Slider>
-    <Work></Work>
-    <Membership></Membership>
-    <Certified></Certified>
-    <Results></Results>
-    <Queries></Queries>
-    <Started></Started>
-    <div className='h-screen'></div>
-    </div>
-    <Footer></Footer>
+      <div className='z-40 '>
+        <Hero></Hero>
+        <Unlimitied></Unlimitied>
+        <Issues></Issues>
+        <Collection></Collection>
+        <Services></Services>
+        <Slider></Slider>
+        <Work></Work>
+        <Membership></Membership>
+        <Certified></Certified>
+        <Results></Results>
+        <Queries></Queries>
+        <Started></Started>
+        <div className='h-screen'></div>
+      </div>
+      <Footer></Footer>
     </>
   )
 }

@@ -6,7 +6,7 @@ const Spline3DModel = () => {
   const [isHovering, setIsHovering] = useState(false);
   const initialRotationRef = useRef(null);
   const lastScrollY = useRef(0);
-  
+
   useEffect(() => {
     const loadSpline = async () => {
       const { Application } = await import(
@@ -22,7 +22,7 @@ const Spline3DModel = () => {
           "https://prod.spline.design/tC-s0aDtMObePOvn/scene.splinecode"
         );
         console.log("Spline scene loaded successfully");
-        
+
         if (spline.runtime && spline.runtime.scene.mainObject) {
           initialRotationRef.current = { ...spline.runtime.scene.mainObject.rotation };
         }
@@ -35,7 +35,7 @@ const Spline3DModel = () => {
 
     // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -47,14 +47,14 @@ const Spline3DModel = () => {
     const mainObject = splineRef.current.runtime.scene.mainObject;
     const currentScrollY = window.scrollY;
     const scrollDelta = currentScrollY - lastScrollY.current;
-    
+
     // Rotate based on scroll direction and speed
     const scrollRotationSpeed = 0.005; // Adjust this value to change rotation speed
     mainObject.rotation.y += scrollDelta * scrollRotationSpeed;
-    
+
     // Optional: Add some vertical rotation too
     mainObject.rotation.x += Math.abs(scrollDelta) * scrollRotationSpeed * 0.2;
-    
+
     lastScrollY.current = currentScrollY;
   };
 
@@ -64,10 +64,10 @@ const Spline3DModel = () => {
     const rect = canvasRef.current.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
-    
+
     const deltaX = (e.clientX - centerX) / (rect.width / 2);
     const deltaY = (e.clientY - centerY) / (rect.height / 2);
-    
+
     const mainObject = splineRef.current.runtime.scene.mainObject;
     const rotationSpeed = 0.5;
 
@@ -83,8 +83,8 @@ const Spline3DModel = () => {
     setIsHovering(true);
     if (splineRef.current?.runtime?.scene?.mainObject) {
       // Store rotation including any scroll-based rotation
-      initialRotationRef.current = { 
-        ...splineRef.current.runtime.scene.mainObject.rotation 
+      initialRotationRef.current = {
+        ...splineRef.current.runtime.scene.mainObject.rotation
       };
     }
   };
@@ -100,7 +100,7 @@ const Spline3DModel = () => {
   };
 
   return (
-    <div 
+    <div
       className="relative w-full h-[130vh] bg-transparent overflow-hidden bg-gray-100"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
